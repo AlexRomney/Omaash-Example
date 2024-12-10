@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+html, p, li, a, div {
+    font-family: 'Source Sans Pro','Verdana', 'ui-serif';
+    @apply leading-relaxed text-darkBlue;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Bungee', 'Arial Black', 'Arial';
+    @apply text-darkBlue;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+.u-tada {
+    animation: tada 1200ms infinite;
+}
+
+@keyframes tada {
+   0% {transform: scale(1);} 
+   10%, 20% {transform: scale(0.9) rotate(-3deg);} 
+   30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 
+   40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 
+   100% {transform: scale(1) rotate(0);} 
+} 
